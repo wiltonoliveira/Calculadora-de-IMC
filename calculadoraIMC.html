@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora IMC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Cálculo de IMC</h1>
+    </header>
+
+    <section>
+        <div>
+            <p>Insira os seus dados abaixo para saber o seu índice de massa coporal (IMC)</p>
+            <p><input type="number" name="peso" id="peso" placeholder="Peso (Kg)">
+               <input type="number" name="altura" id="altura" placeholder="Altura (Metros)">
+               <input type="number" name="idade" id="idade" placeholder="Idade">
+            </p>
+            <p>
+               <input type="radio" id="masc" name="genero" value="masculino" checked>
+               <label for="masculino">Masculino</label>
+               <input type="radio" id="fem" name="genero" value="feminino">
+               <label for="feminino">Feminino</label>
+            </p>
+            <p>
+                Atividade Física:
+                <input type="radio" name="ativiFisica" id="sedentaria" checked>
+                <label for="sedentaria">Sedentaria</label>
+
+                <input type="radio" name="ativiFisica" id="moderada">
+                <label for="moderada">Moderada</label>
+
+                <input type="radio" name="ativiFisica" id="intensa">
+                <label for="intensa">Intensa</label>
+            </p>
+            <p><input type="button" value="Verificar" onclick="calcular()"></p>
+        </div>
+
+        <div>
+
+        </div>
+    </section>
+
+    <footer>
+        &copy;Wilton Oliveira
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
