@@ -25,5 +25,6 @@ function calcular(){
     }
 
     saida.style.textAlign = 'center'
-    saida.innerHTML = `Seu IMC é de ${imc.toFixed(2)}!<br> Você está com ${status};
+    saida.innerHTML = `Seu IMC é de ${imc.toFixed(2)}!<br> Você está com ${status}`
+    
 }
