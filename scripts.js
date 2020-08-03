@@ -12,5 +12,5 @@ function calcular(){
     let imc = peso / (altura**2);
 
     saida.style.textAlign = 'center'
-    saida.innerHTML = `Seu IMC é de ${imc}!<br>`
+    saida.innerHTML = `Seu IMC é de ${imc.toFixed(2)}!<br>`
 }
