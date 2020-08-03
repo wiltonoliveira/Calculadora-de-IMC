@@ -1,11 +1,16 @@
 function calcular(){
-    var formPeso = document.getElementById('peso')
-    var formAltura = document.getElementById('altura')
-    var formIdade = document.getElementById('idade')
+    let formPeso = document.getElementById('peso');
+    let formAltura = document.getElementById('altura');
+    let formIdade = document.getElementById('idade');
 
-    var peso = Number(formPeso.value)
-    var altura = Number(formAltura.value)
-    var idade = Number(formIdade.value)
+    let peso = Number(formPeso.value);
+    let altura = Number(formAltura.value);
+    let idade = Number(formIdade.value);
 
-    var imc = peso / (altura**2)
+    let saida = document.getElementById('resultado');
+    
+    let imc = peso / (altura**2);
+
+    saida.style.textAlign = 'center'
+    saida.innerHTML = `Seu IMC é de ${imc}!<br>`
 }
